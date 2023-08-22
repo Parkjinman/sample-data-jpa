@@ -1,0 +1,24 @@
+server:
+  port: 9080
+
+spring:
+  datasource:
+    hikari:
+      maximum-pool-size:  4
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:postgresql://localhost:5432/jpatest
+    username: postgres
+    password: 1234
+    # url:  jdbc:p6spy:postgresql://10.10.50.157:5432/smartgrid
+    # username: bdrnd
+    # password: bdrnd
+
+jwt:
+  secret: reolino
+  validLongYn: Y
+  accessTokenValidTime: 28800000
+  refreshTokenValidTime: 86400000
+
+logging:
+  level:
+    root: info
