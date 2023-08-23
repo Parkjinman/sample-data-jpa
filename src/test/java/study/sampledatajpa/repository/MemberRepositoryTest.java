@@ -158,4 +158,5 @@ class MemberRepositoryTest {
         List<Member> result = memberRepository.findListByUsername("asdasf");
         System.out.println("result = " + result.size());
     }
+
 }
